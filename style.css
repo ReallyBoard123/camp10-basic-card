@@ -1,0 +1,77 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	background-color: #fff;
+	margin: 20px auto;
+}
+
+.product-image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	margin-bottom: 15px;
+}
+
+.price-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.price {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	align-self: flex-end;
+}
+
+.heart {
+	cursor: pointer;
+}
+
+.heart input[type="checkbox"] {
+	display: none;
+}
+
+.heart span {
+	font-size: 36px;
+	color: #ccc;
+	transition: color 0.3s;
+}
+
+.heart input[type="checkbox"]:checked + span {
+	color: #f00;
+}
+
+.description {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.buy-now {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+	background-color: #0056b3;
+}
